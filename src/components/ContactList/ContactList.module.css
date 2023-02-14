@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.listItem {
+  margin-bottom: 10px;
+}
+.deleteBtn {
+  border-radius: 5px;
+  background-color: #ec83dc;
+  color: #000000;
+}
+.deleteBtn:hover,
+.deleteBtn:active {
+  background-color: #eb1abb;
+  color: #000000;
+}
+.name {
+  margin-right: 10px;
+}
+.number {
+  margin-right: 10px;
+}

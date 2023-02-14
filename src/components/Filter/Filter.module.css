@@ -1,0 +1,15 @@
+.name {
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.userName {
+  width: 250px;
+  height: 30px;
+  margin: 0 5px 5px;
+  padding: 5px;
+
+  font-size: 20px;
+  border-radius: 10px;
+}

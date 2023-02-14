@@ -1,0 +1,13 @@
+.phonebook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.phonebookTitle,
+.contactTitle {
+  text-align: center;
+
+  font-size: 40px;
+  font-weight: 600;
+}

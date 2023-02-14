@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.submitBtn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: #ec83dc;
+  color: #000000;
+}
+.submitBtn:hover,
+.submitBtn:active {
+  background-color: #eb1abb;
+  color: #000000;
+}
+.inputTitle {
+  font-size: 20px;
+}
+
+input[type='tel'] {
+  border-color: #ec83dc;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+input[type='text'] {
+  border-color: #ec83dc;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+input[type='tel']:focus {
+  background-color: #ec83dc;
+}
+
+input[type='text']:focus {
+  background-color: #ec83dc;
+}
