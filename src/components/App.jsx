@@ -7,7 +7,7 @@ import { Component } from 'react';
 
 export class App extends Component {
   state = {
-    contacts: [
+    contacts: JSON.parse(localStorage.getItem('contacts')) ?? [
       { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
       { id: 'id-2', name: 'Hermione Kline', number: '443-89-12' },
       { id: 'id-3', name: 'Eden Clements', number: '645-17-79' },
@@ -15,6 +15,12 @@ export class App extends Component {
     ],
     filter: '',
   };
+
+  componentDidUpdate(_, prevState) {
+    if (prevState.contacts !== this.state.contacts) {
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+    }
+  }
 
   addNewContact = newContact => {
     if (this.state.contacts.some(contact => contact.name === newContact.name)) {
